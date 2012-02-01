@@ -29,12 +29,12 @@ def get_font_dim(fn):
     return ImageDraw.Draw(
         Image.new("RGB", (1000,1000), (255,255,255))).textsize("A", font=fn)
     
-TTF = "/fonts/Verdana.ttf"
+TTF = "/../contigo/static/" + "/fonts/Verdana.ttf"
 
 BASE_COLORS = { 'A': (255,80,80), 'C': (80,255,80), 'G': (80,80,255),\
                 'T': (255,255,80), '*': (80,255,255), 'N': (255,80,255)}
 
-SMALL_FONT = ImageFont.load(sys.path[0] + "/fonts/fixed.6.pil")
+SMALL_FONT = ImageFont.load(sys.path[0] + "/../contigo/static/" + "/fonts/fixed.6.pil")
 # SMALL_FONT = ImageFont.truetype(sys.path[0] + '/fonts/04B_24__.TTF', 8)
 MED_FONT = ImageFont.truetype(sys.path[0] + TTF, 32)
 LRG_FONT = ImageFont.truetype(sys.path[0] + TTF,  64)

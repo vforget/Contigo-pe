@@ -21,7 +21,8 @@ def html_footer():
 
 
 def interface(of, options, contig_table, scaffold_table, filter_options):
-    html = open(sys.path[0] + "/template.html").read()
+    root_path = sys.path[0] + "/../contigo/static"
+    html = open(root_path + "/html/template.html").read()
     html = html.replace("CONTIG_TABLE_HTML", contig_table)
     html = html.replace("SCAFFOLD_TABLE_HTML", scaffold_table)
     html = html.replace("FILTER1_OPTIONS", filter_options)
