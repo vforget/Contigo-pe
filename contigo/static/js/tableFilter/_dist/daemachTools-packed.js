@@ -233,19 +233,20 @@ jQuery.extend(cssMonkey,{
 		getRule: function(s,a){
 			var rules,matches=[], sObj=[];
 			for (var i=this.sheets.length-1;i>=0;i--){
-				rules = (this.sheets[i].cssRules) ? this.sheets[i].cssRules : this.sheets[i].rules;
-				if (!rules.length){
-					return matches;
-				}
-				s = s.toLowerCase();
+			    rules = (this.sheets[i].cssRules) ? this.sheets[i].cssRules : this.sheets[i].rules;
+			    if ((rules == null) || !rules.length){
+				return matches;
+			    }
+			    s = s.toLowerCase();
+			    
 			    for(var r = rules.length-1; r >= 0; r--) {
 			        if (typeof rules[r].selectorText != "undefined" && rules[r].selectorText.toLowerCase() == s){
-						a = (typeof a == "undefined")? null : rules[r].style[this.camelCase(a)];
-						matches.push([rules[r],i,r,a]);
-					}
+				    a = (typeof a == "undefined")? null : rules[r].style[this.camelCase(a)];
+				    matches.push([rules[r],i,r,a]);
+				}
 			    }
 			}
-			return matches;
+		    return matches;
 		},
 		_findStyle: function(cssText,attr){
 			var n = (attr.indexOf(":")>=0) ? attr.split(":")[0].trim() : attr;
@@ -304,7 +305,7 @@ jQuery.extend(cssMonkey,{
 			} else {
 				var sheet = this.sheets[this.sheets.length-1];
 				var rules = sheet.cssRules ? sheet.cssRules : sheet.rules;
-			    if (index == undefined) {
+			    if (rules && (index == undefined)) {
 			        index = rules.length;
 			    }
 				this._insertRule(sheet, selector,styles,index)
