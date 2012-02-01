@@ -20,12 +20,7 @@ from optparse import OptionParser
 import os.path
 import shutil
 
-import assembly
-import render
-import zoomtig
-import json
-import status
-import agp
+import contigo
 
 import datetime
 import multiprocessing
