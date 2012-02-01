@@ -14,7 +14,6 @@ sys.path.append("/data/sequencer/software/python/lib64/python2.6/site-packages/P
 # sys.path.append("/data/sequencer/software/python/lib/lib64/python2.5/site-packages/")
 sys.path.append("/home/vforget/lib/python/PIL")
 
-print sys.path
 import re
 from optparse import OptionParser
 import os.path
