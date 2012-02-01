@@ -1,0 +1,61 @@
+/* top right bottom left */
+
+/* main */
+#banner { border: solid 1px white; padding: 0px; width: 100px; height: 50px; float: left; display: table-cell; vertical-align: middle; text-align: center; }
+#banner a:link { text-decoration: none; color: white; }
+#banner a:visited { text-decoration: none; color: white; }
+#banner a:hover { text-decoration: none; color: red; }
+#banner a:active { text-decoration: none; color: white; }
+
+#links { border: solid 1px white; border-color: white white white #c9d7f1;padding: 0px;width: 50px;height: 50px;float: left;display: table-cell;vertical-align: middle;text-align: center; }
+#links img {width: 30px;height: 30px;border: 0px;padding: 2px 10px 2px 10px;}
+#links a:link { text-decoration: none; color: white; }
+#links a:visited { text-decoration: none; color: white; }
+#links a:hover { text-decoration: none; color: red; }
+#links a:active { text-decoration: none; color: white; }
+
+body { background-color: white; margin: 0px 0px 0px 10px; padding: 0px; width: 920px; height: 100% }
+#content { border: 0px black solid; background-color: #ffffff; width: 918px; height: 100%; }
+
+#footer { font-size:0.6em; color: #999; font-family: Verdana, sans-serif; text-align: center; }
+#footer a:link { text-decoration: underline; color: #999; }
+#footer a:visited { text-decoration: underline; color: #999; }
+#footer a:hover { text-decoration: underline; color: #999; }
+#footer a:active { text-decoration: underline; color: #999; }
+
+.icon { vertical-align: top; background-color: rgb(255, 0, 0); background-image: url(/i/rounded_bg.gif); background-repeat: no-repeat; color: black; }
+/* stats */
+#stats { border: solid 1px white; border-color: white white white #c9d7f1; width: 738px; height: 46px; float: left; color: black; background-color: white; font-size:0.6em; color: black; font-family: Verdana, sans-serif; padding: 2px 10px 2px 10px; }
+.stat_label { color: #C00; font-weight: normal; }
+.assembly_stat_val { font-weight: bold; }
+
+/* zoomtig */
+#zoomtig_header { width: 100%; height: 15px;  border: 1px solid; border-color: white; font-size:0.6em; color: black; font-family: Verdana, sans-serif; text-align: center; background-color: #eee; margin: 0px; }
+#contig_pos, #contig_depth, #contig_window_size { font-weight: bold; }
+#zoomtig { border: 1px solid; border-color: #eee; width: 100%; height: 100%; background-color: white; font-size:0.6em; color: black; font-family: Verdana, sans-serif; text-align: center; margin: 0px; }
+
+/* charts */
+#filter1 { background-color: #ccc; padding: 0px; color: #000; padding: 2px; }
+.filter_title{ color: #000; text-decoration: none; font-weight: bold; }
+#filter_item { font-weight: bold; }
+#num_filter_pt { font-weight: bold; color: #000;}
+.chart_title{ font-weight: bold; font-size: 1.0em; color: #000; text-decoration: underline;}
+.chart_axes{ padding: 5px 0px 0px 0px; }
+#chart_tabs { border: dotted 1px; border-color: #ccc; margin: 2px 0px 2px 2px; width: 308px; height: 750px; padding: 0px; background-color: white; float: left; font-size:0.6em; color: black; font-family: Verdana, sans-serif; text-align: center; }
+.chart_detail { border: 1px solid #CCC; background-color: white; padding: 2px 2px 2px 2px; width: 200px; }
+.chart{ width: 230px; height: 160px; margin: 5px; }
+.tickLabel { font-size: 1em; font-family: Verdana; }
+.chart_menu { font-family: Verdana; font-size: 1.0em }
+.chart_area { padding: 5px 0px 10px 0px; border: solid 0px; border-color: #000;}
+#chart1 { padding: 5px 0px 10px 0px; border: solid 1px; border-color: #fff;}
+#chart2 { padding: 5px 0px 10px 0px; border: solid 1px; border-color: #fff;}
+#chart3 { padding: 5px 0px 10px 0px; border: solid 1px; border-color: #fff;}
+
+/* used in contigo.js */ .help { color: #c00; font-style: italic; }
+
+/* table */ /* height: 700px; */
+#table_tabs { border: dotted 1px; border-color: #ccc; width: 595px; height: 750px; padding: 0px; margin: 2px 0px 2px 0px; background-color: #fff; float: left; font-size:0.6em; color: black; font-family: Verdana, sans-serif; text-align: center; }
+.table_box { width: 565px; height: 670px; overflow: auto; padding: 2px; }
+#contig_table { border: 0px solid black; width: 560px; table-layout:fixed; text-align: center; }
+#scaffold_table { border: 0px solid black; width: 400px; table-layout:fixed; text-align: center; }
+#tool_box { text-align: left; }
