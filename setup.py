@@ -11,5 +11,4 @@ setup(
     license='LICENCE.txt',
     description='Web-based assembly viewer.',
     long_description=open('README.txt').read(),
-    install_requires=['PIL'],
 )
